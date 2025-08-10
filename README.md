@@ -46,6 +46,9 @@ glossar-projekt/
 - Safari: vollständig
 - Internet Explorer: eingeschränkt (moderne Browser empfohlen)
 
+
+The content is served directly from the repository’s main branch, so it’s always up to date.
+You can view the live site here: https://lucie-schoeffel.github.io/glossar-projekt
 To run the server locally, run:
 `python3 -m http.server 8000 --bind 127.0.0.1`
 `open http://127.0.0.1:8000/index.html`
