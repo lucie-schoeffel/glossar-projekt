@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Glossar – Logistik, IT & Marketing</title>
+  <meta name="description" content="Glossar mit Begriffen aus Logistik, IT und Marketing – inklusive Suche, Filter und Detailseiten." />
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/glossar.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#hauptinhalt">Zum Inhalt springen</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner hero">
+      <h1 class="hero-title">Log7-Consult Glossar</h1>
+      <p class="hero-subtitle">Ihr umfassendes Nachschlagewerk für Fachbegriffe aus Logistik, IT und Marketing</p>
+
+      <div class="hero-categories" aria-label="Kategorien Überblick">
+        <div class="hero-card">
+          <div class="hero-icon" hero-icon="logistik" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path><path d="M15 18H9"></path><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path><circle cx="17" cy="18" r="2"></circle><circle cx="7" cy="18" r="2"></circle></svg>
+          </div>
+          <h3 class="hero-card-title">Logistik</h3>
+          <p class="hero-card-desc">Supply Chain & Prozesse</p>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-icon" hero-icon="it" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </div>
+          <h3 class="hero-card-title">IT</h3>
+          <p class="hero-card-desc">Technologie & Development</p>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-icon" hero-icon="marketing" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-5v12L3 14v-3z"></path><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path></svg>
+          </div>
+          <h3 class="hero-card-title">Marketing</h3>
+          <p class="hero-card-desc">Marken & Kommunikation</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="hauptinhalt" class="container" role="main">
+    <section id="suche" class="search-section" aria-labelledby="suche-ueberschrift">
+      <div class="search-controls">
+        <input id="suchfeld" type="search" inputmode="search" placeholder="Begriffe durchsuchen..." aria-describedby="suche-hinweis suche-status" autocomplete="off" />
+        <div id="suche-status" class="sr-only" role="status" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="kategorien" class="filter-section" aria-labelledby="filter-ueberschrift">
+      <div class="filter-controls" role="group" aria-label="Kategorie-Filter">
+        <button class="filter-btn is-active" data-category="alle" aria-pressed="true">Alle Kategorien</button>
+        <button class="filter-btn" data-category="logistik" aria-pressed="false">Logistik</button>
+        <button class="filter-btn" data-category="it" aria-pressed="false">IT</button>
+        <button class="filter-btn" data-category="marketing" aria-pressed="false">Marketing</button>
+      </div>
+    </section>
+
+    <section id="begriffe" class="terms-section" aria-labelledby="begriffe-ueberschrift">
+      <h2 id="begriffe-ueberschrift">Alle Begriffe</h2>
+      <ul class="card-grid" id="termListe">
+        <li class="card" data-category="logistik">
+          <a href="begriffe/supply-chain-management.html" class="card-link">
+            <div class="card-title-row">
+              <div class="hero-icon" hero-icon="logistik" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path><path d="M15 18H9"></path><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path><circle cx="17" cy="18" r="2"></circle><circle cx="7" cy="18" r="2"></circle></svg>
+              </div>
+              <h3 class="term-title">Supply Chain Management</h3>
+            </div>
+            <p class="term-description">Ganzheitliche Planung, Steuerung und Optimierung von Lieferketten vom Rohstoff bis zum Endkunden.</p>
+            <div class="card-bottom-row">
+              <div class="term-meta">
+                <span class="chip" data-chip="logistik">Logistik</span>
+              </div>
+              <span class="card-arrow" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </div>
+          </a>
+        </li>
+        <li class="card" data-category="logistik">
+          <a href="begriffe/just-in-time.html" class="card-link">
+            <div class="card-title-row">
+              <div class="hero-icon" hero-icon="logistik" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path><path d="M15 18H9"></path><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path><circle cx="17" cy="18" r="2"></circle><circle cx="7" cy="18" r="2"></circle></svg>
+              </div>
+              <h3 class="term-title">Just-in-Time</h3>
+            </div>
+            <p class="term-description">Produktions- und Lieferstrategie, bei der Materialien genau zum benötigten Zeitpunkt bereitgestellt werden.</p>
+            <div class="card-bottom-row">
+              <div class="term-meta">
+                <span class="chip" data-chip="logistik">Logistik</span>
+              </div>
+              <span class="card-arrow" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </div>
+          </a>
+        </li>
+        <li class="card" data-category="it">
+          <a href="begriffe/api.html" class="card-link">
+            <div class="card-title-row">
+              <div class="hero-icon" hero-icon="it" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3 class="term-title">API</h3>
+            </div>
+            <p class="term-description">Schnittstelle, die es Anwendungen ermöglicht, miteinander zu kommunizieren und Daten/Services bereitzustellen.</p>
+            <div class="card-bottom-row">
+              <div class="term-meta">
+                <span class="chip" data-chip="it">IT</span>
+              </div>
+              <span class="card-arrow" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </div>
+          </a>
+        </li>
+        <li class="card" data-category="it">
+          <a href="begriffe/lead-time.html" class="card-link">
+            <div class="card-title-row">
+              <div class="hero-icon" hero-icon="it" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3 class="term-title">Lead Time</h3>
+            </div>
+            <p class="term-description">Zeitspanne von der Bestellung bis zur Auslieferung eines Produkts oder Services.</p>
+            <div class="card-bottom-row">
+              <div class="term-meta">
+                <span class="chip" data-chip="it">IT</span>
+              </div>
+              <span class="card-arrow" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </div>
+          </a>
+        </li>
+        <li class="card" data-category="marketing">
+          <a href="begriffe/brand-awareness.html" class="card-link">
+            <div class="card-title-row">
+              <div class="hero-icon" hero-icon="marketing" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-5v12L3 14v-3z"></path><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path></svg>
+              </div>
+              <h3 class="term-title">Brand Awareness</h3>
+            </div>
+            <p class="term-description">Ausmaß, in dem Konsumentinnen und Konsumenten eine Marke erkennen und zuordnen können.</p>
+            <div class="card-bottom-row">
+              <div class="term-meta">
+                <span class="chip" data-chip="marketing">Marketing</span>
+              </div>
+              <span class="card-arrow" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <p class="no-results" hidden>Keine Treffer. Bitte Suchbegriff anpassen oder Filter zurücksetzen.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <small>
+        Letzte Speicherung: <time id="lastUpdated" datetime=""></time>
+        <span aria-hidden="true">·</span>
+        <a href="README.md">Hinweise & Nutzung</a>
+      </small>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lead Time – Glossar</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script defer src="../js/glossar.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="back-link" href="../index.html#begriffe" aria-label="Zurück zur Übersicht">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+        <span class="back-text">Zurück zur Übersicht</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="sr-only">Navigation</span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Navigation">
+        <ul>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhalt" class="container">
+    <article class="article">
+      <header>
+        <h1>Lead Time (Durchlaufzeit)</h1>
+        <p class="term-description">Die Lead Time ist die Zeitspanne von der Auslösung einer Bestellung bis zur Lieferung an die Kundin bzw. den Kunden.</p>
+        <div class="term-meta"><span class="chip" data-chip="it">IT</span></div>
+      </header>
+
+      <section>
+        <h2>Definition</h2>
+        <p>Die Durchlaufzeit setzt sich zusammen aus Beschaffungs-, Produktions- und Transportzeiten. Sie ist eine zentrale Kennzahl im <a href="supply-chain-management.html">Supply Chain Management</a>.</p>
+      </section>
+
+      <section>
+        <h2>Einflussfaktoren</h2>
+        <ul>
+          <li>Bestelllosgrößen und Loswechselzeiten</li>
+          <li>Lieferantenperformance und <a href="/glossar-projekt/begriffe/just-in-time.html">JIT</a>-Fähigkeit</li>
+          <li>Transportwege, Zoll und Zollabfertigung</li>
+          <li>WIP-Bestände und Engpässe in der Fertigung</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Messung (Beispiel)</h2>
+        <table class="table">
+          <tbody>
+            <tr><th>Auftragseingang</th><td>T0</td></tr>
+            <tr><th>Fertigstellung</th><td>T0 + 5 Tage</td></tr>
+            <tr><th>Transport</th><td>2 Tage</td></tr>
+            <tr><th>Lead Time</th><td>7 Tage</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Verwandte Begriffe</h2>
+        <ul class="related">
+          <li><a href="/glossar-projekt/begriffe/just-in-time.html">Just-in-Time</a></li>
+          <li><a href="/glossar-projekt/begriffe/supply-chain-management.html">Supply Chain Management</a></li>
+        </ul>
+      </section>
+
+      <section class="ext-links">
+        <h2>Externe Ressourcen</h2>
+        <ul>
+          <li><a href="https://de.wikipedia.org/wiki/Durchlaufzeit" target="_blank" rel="noopener">Wikipedia: Durchlaufzeit</a></li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer"><div class="container"><small>Letzte Speicherung: <time id="lastUpdated" datetime=""></time></small></div></footer>
+</body>
+</html>
