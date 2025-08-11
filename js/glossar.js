@@ -4,16 +4,26 @@
   const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
 
   function formatLastModified() {
-    const el = $('#lastUpdated');
-    if (!el) return;
-    const lm = document.lastModified; // Browserseitiger Zeitstempel der gespeicherten Datei
-    const date = new Date(lm);
-    if (Number.isNaN(date.getTime())) return;
-    const fmt = new Intl.DateTimeFormat('de-DE', {
-      dateStyle: 'medium', timeStyle: 'short'
-    });
-    el.textContent = fmt.format(date);
-    el.setAttribute('datetime', date.toISOString());
+    const el = $('#lastModified');
+    // const el = $('#lastModified');
+    // if (!el) return;
+    // const lm = document.lastModified; // Browserseitiger Zeitstempel der gespeicherten Datei
+    // const date = new Date(lm);
+    // if (Number.isNaN(date.getTime())) return;
+    // const fmt = new Intl.DateTimeFormat('de-DE', {
+    //   dateStyle: 'medium', timeStyle: 'short'
+    // });
+    // el.textContent = fmt.format(date);
+    // el.setAttribute('datetime', date.toISOString());
+
+    var lastModified = new Date(document.lastModified);
+    var dayNames = new Array("Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag");
+    var monthNames = new Array("Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember");
+    var Stunden = lastModified.getHours();
+    var Minuten = lastModified.getMinutes();
+    var NachVoll = ((Minuten < 10) ? ":0" : ":");
+    var Jahr = lastModified.getFullYear();
+    document.getElementById('lastModified').textContent = dayNames[lastModified.getDay()] + ", " + lastModified.getDate() + ". " + monthNames[lastModified.getMonth()] + " " + Jahr + ", " + Stunden + NachVoll + Minuten + " Uhr";
   }
 
   function stripHighlights(node) {
