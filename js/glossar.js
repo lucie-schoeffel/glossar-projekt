@@ -57,7 +57,7 @@
     function applyFilter() {
       const activeBtn = $('.filter-btn.is-active');
       const activeCat = activeBtn ? activeBtn.dataset.category : 'alle';
-      const q = (searchInput.value || '').trim().toLowerCase();
+      const q = (searchInput?.value || '').trim().toLowerCase();
       let visibleCount = 0;
 
       cards.forEach(card => {
