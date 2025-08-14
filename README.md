@@ -8,6 +8,8 @@ Startseite: `index.html` – Detailseiten: `begriffe/*.html`
 - Filtern Sie nach Kategorien (Logistik, IT, Marketing).
 - Klicken Sie auf einen Begriff für Details, Beispiele und Verlinkungen.
 
+Sollten Sie weitere Fragen haben, kontaktieren Sie bitte das zuständige Glossar-Team unter der E-Mail-Adresse: glossar@log7-consult.de
+
 ## Struktur
 ```
 glossar-projekt/
@@ -17,14 +19,15 @@ glossar-projekt/
 ├── js/
 │   └── glossar.js
 ├── begriffe/
-│   ├── supply-chain-management.html
-│   ├── just-in-time.html
 │   ├── api.html
+│   ├── brand-awareness.html
+│   ├── just-in-time.html
 │   ├── lead-time.html
-│   └── brand-awareness.html
+│   └── supply-chain-management.html
 └── assets/
     └── images/
-        └── logo.svg
+        └── favicon.ico
+        └── header_image.jpeg
 ```
 
 ## Features
